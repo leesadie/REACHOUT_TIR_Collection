@@ -2,6 +2,7 @@
 ## T1D REACHOUT
 
 Final `data` folder should look like: 
+```
 ├── data
 │   ├── Participants
 │   │   ├── Dexcom
@@ -9,3 +10,4 @@ Final `data` folder should look like:
 │   ├── Peer Supporters
 │       ├── Dexcom
 │       ├── Libre2
+```
