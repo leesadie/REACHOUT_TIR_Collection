@@ -5,8 +5,12 @@ Final `data` folder should look like:
 ```
 ├── data
 │   ├── Participants
-│   │   ├── Dexcom
-        ├── Libre2
+│   │   ├── Waitlist
+│   │   │   ├── Dexcom
+│   │   │   ├── Libre2
+        ├── Treatment
+│   │   │   ├── Dexcom
+│   │   │   ├── Libre2
 │   ├── Peer Supporters
 │       ├── Dexcom
 │       ├── Libre2
