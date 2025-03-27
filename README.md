@@ -31,11 +31,14 @@ The final `data` folder should have the following structure:
 
 ## Analysis
 **File**
+
 The code for analysis is in `TIR_Final.ipynb`. Libraries used are: 
 - `tidyverse` - for reading, analyzing, and visualizing data
 - `lubridate` - for working with datetime data
 
-For Dexcom and FreeStyle Libre users, functions are defined separately given the differences in the format of their data. The functions are then applied to each group for each CGM: waitlist participants, treatment participants, and peer supporters, with a dataframe created for each group. The dataframes are then binded across CGMs: waitlist participants across Dexcom and FreeStyle Libre, treatment participants across Dexcom and FreeStyle Libre, and peer supporters across Dexcom and FreeStyle Libre.
+**Time in Range**
+
+For Dexcom and FreeStyle Libre users, functions are defined separately given the differences in the format of their data. The functions are applied to each group for each CGM: waitlist participants, treatment participants, and peer supporters, with a dataframe created for each group. The dataframes are then binded across CGMs: waitlist participants across Dexcom and FreeStyle Libre, treatment participants across Dexcom and FreeStyle Libre, and peer supporters across Dexcom and FreeStyle Libre.
 
 > [!NOTE]  
 > We are not comparing between types of CGMs, but rather looking to see differences, if any, of the intervention across all participants regardless of CGM.
@@ -51,6 +54,7 @@ TIR = (in \textunderscore range \times 1000 / dim(y_i)) / 10
 $$
 
 **Additional metrics**
+
 Time above range (TAR) and time below range (TBR) follow the above formulas, where TAR calculates the percentage of glucose values strictly greater than 10.0 and TBR calculates the percentage of glucose values strictly less than 3.9.
 
 Other CGM-derived glycemic metrics are also calculated, being the other core endpoints as suggested by international consensus [1].
@@ -60,6 +64,7 @@ Other CGM-derived glycemic metrics are also calculated, being the other core end
 - Coefficient of variation
 
 **Visualization**
+
 The visualization shows differences in TIR from baseline to post-intervention (14 days before Day 0 to 14 days after the 6-month end point). The code for visualization is meant to be run once TIR has been calculated for both baseline and 6-months. Example output of the visualization was run on test data and can be found in `Visualization.ipynb`.
 
 ## References
